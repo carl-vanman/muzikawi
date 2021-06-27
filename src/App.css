@@ -2,67 +2,73 @@
 
 :root {
 	/* Colours */
-    --black: #1A1A1A;
-    --white: #FFF;
-    --PrimaryRed: #EE2624;
-    --Grey500: #8C8C8C;
-    --Grey200: #E5E5E5;
+	--black: #1a1a1a;
+	--white: #fff;
+	--PrimaryRed: #ee2624;
+	--Grey500: #8c8c8c;
+	--Grey200: #e5e5e5;
 
 	/* Fonts */
-
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    background-color: var(--black);
+	background-color: var(--black);
 }
 
 .learn-more {
-    width: 162px;
-    height: 38px;
-    border: 2px solid var(--PrimaryRed);
-    border-radius: 30px;
+	width: 162px;
+	height: 38px;
+	border: 2px solid var(--PrimaryRed);
+	border-radius: 30px;
 	/* behövs en background color? */
-    /* background-color: var(--black); */
-    background-color: transparent;
-    color: var(--white);
-    cursor: pointer;
-    font-family: Myriad Pro, sans-serif;
-    font-weight: 300;
-    font-size: 18px;
+	/* background-color: var(--black); */
+	background-color: transparent;
+	color: var(--white);
+	cursor: pointer;
+	font-family: Myriad Pro, sans-serif;
+	font-weight: 300;
+	font-size: 18px;
 }
 
-h1, p {
-    color: var(--white);
+h1,
+p {
+	color: var(--white);
 }
 
 h1 {
-    font-family: Myriad Pro, sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 40px;
-    line-height: 42px;
-    letter-spacing: -2.5%;
-    text-align: center;
+	font-family: Myriad Pro, sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 40px;
+	line-height: 42px;
+	letter-spacing: -2.5%;
+	text-align: center;
 }
 
 p {
-    font-family: Myriad Pro, sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
+	font-family: Myriad Pro, sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+}
+nav {
+	width: 100vw;
+	height: 80px;
+	background-color: var(--PrimaryRed);
 }
 
 .img-hero {
-	width: 100vw;
+	width: 375px;
 	height: 560px;
 	background-image: url("img/hero_1920.svg");
+	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 }
@@ -103,11 +109,56 @@ p {
 	font-size: 42px;
 }
 
-
 .banner-card .content {
 	padding: 1.5em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 1.5em;
+}
+
+.banner-card .podcast img {
+	border-style: dashed;
+	color: var(--Grey500);
+	border-width: 1px;
+}
+
+.hero .img-hero {
+	padding: 1.5em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 1.5em;
+}
+
+.container {
+	display: flex;
+	position: relative;
+	cursor: pointer;
+}
+
+.container input {
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.checkmark {
+	height: 6px;
+	width: 6px;
+	background-color: var(--white);
+	border-radius: 50%;
+}
+
+.container input:checked ~ .checkmark {
+	background-color: var(--PrimaryRed);
+}
+
+.checks {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
 }
