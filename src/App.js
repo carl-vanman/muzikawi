@@ -9,7 +9,9 @@ function App() {
 			</header>
 			<main>
 				<section></section>
-				<section></section>
+				<section className="banner-mixcont">
+
+				</section>
 			</main>
 			<footer></footer>
 		</div>
