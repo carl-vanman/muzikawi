@@ -29,7 +29,6 @@ body {
     font-size: 18px;
 }
 
-
 h1, p {
     color: var(--white);
 }
@@ -42,7 +41,6 @@ h1 {
     line-height: 42px;
     letter-spacing: -2.5%;
     text-align: center;
-    margin-top: 360px;
 }
 
 p {
@@ -51,4 +49,25 @@ p {
     font-size: 14px;
     line-height: 18px;
     text-align: center;
+}
+
+.img-hero {
+	width: 100vw;
+	height: 560px;
+	background-image: url("img/hero_1920.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.banner-content .learn-more {
+	border: 1px solid var(--white);
+}
+
+.banner-content .img-radio {
+	width: 375px;
+	height: 240px;
+	background-image: url("img/banner_radio.svg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+
 }
