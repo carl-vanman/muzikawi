@@ -121,12 +121,6 @@ nav {
 	gap: 1.5em;
 }
 
-.banner-card .podcast img {
-	border-style: dashed;
-	color: var(--Grey500);
-	border-width: 1px;
-}
-
 .hero .img-hero {
 	padding: 1.5em;
 	display: flex;
