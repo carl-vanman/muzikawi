@@ -1,3 +1,11 @@
+:root {
+    --black: #1A1A1A;
+    --white: #FFF;
+    --PrimaryRed: #EE2624;
+    --Grey500: #8C8C8C;
+    --Grey200: #E5E5E5;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,3 +13,6 @@
 }
 
 
+body {
+    background-color: var(--black);
+}
