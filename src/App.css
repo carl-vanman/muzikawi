@@ -15,3 +15,40 @@
 body {
     background-color: var(--black);
 }
+
+.learn-more {
+    width: 162px;
+    height: 38px;
+    border: 2px solid var(--PrimaryRed);
+    border-radius: 30px;
+    background-color: var(--black);
+    color: var(--white);
+    cursor: pointer;
+    font-family: Myriad Pro, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+
+h1, p {
+    color: var(--white);
+}
+
+h1 {
+    font-family: Myriad Pro, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -2.5%;
+    text-align: center;
+    margin-top: 360px;
+}
+
+p {
+    font-family: Myriad Pro, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+}
