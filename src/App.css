@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
 :root {
-	/* Colours */
+	/* ===================================================================================== COLORS */
 	--black: #1a1a1a;
 	--white: #fff;
 	--PrimaryRed: #ee2624;
 	--Grey500: #8c8c8c;
 	--Grey200: #e5e5e5;
 
-	/* Fonts */
+	/* ===================================================================================== FONTS */
+	/* Behövs Fonts delen här? */
 }
 
 * {
@@ -42,7 +43,7 @@ p {
 }
 
 h1 {
-	font-family: Myriad Pro, sans-serif;
+	font-family: "Myriad Pro", sans-serif;
 	font-weight: 400;
 	font-style: italic;
 	font-size: 40px;
@@ -51,8 +52,19 @@ h1 {
 	text-align: center;
 }
 
+h2 {
+	font-family: "Myriad Pro", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 30px;
+	line-height: 32px;
+	text-align: center;
+	/* margin-left: 24px;
+	margin-top: 40px; */
+}
+
 p {
-	font-family: Myriad Pro, sans-serif;
+	font-family: "Myriad Pro", sans-serif;
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 18px;
@@ -60,110 +72,13 @@ p {
 }
 
 /* overraidar nav i footer. vet inte varför? */
-/* nav {
+.navigation {
 	width: 100vw;
 	height: 80px;
 	background-color: var(--PrimaryRed);
-} */
-
-.img-hero {
-	width: 375px;
-	height: 560px;
-	background-image: url("img/hero_1920.svg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
 }
 
-
-.banner-card .learn-more {
-	border: 1px solid var(--white);
-}
-
-.banner-card {
-	background-color: var(--PrimaryRed);
-}
-
-.banner-card .img {
-	width: 375px;
-	/* height på bild stämmer inte med height vid export */
-	height: 226px;
-	background-repeat: no-repeat;
-	background-size: 100%;
-}
-
-.banner-card .radio {
-	background-image: url("img/banner_radio.svg");
-}
-
-.banner-card .podcast {
-	background-image: url("img/banner_podcast.svg");
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-end;
-	padding: 1.5em 5.25em;
-}
-
-.banner-card .podcast h3 {
-	font-family: 'Montserrat', sans-serif;
-	color: var(--white);
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 42px;
-	line-height: 48px;
-	margin-bottom: 0.25em;
-}
-
-.banner-card .content {
-	padding: 1.5em;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 1.5em;
-}
-
-.hero .img-hero {
-	padding: 1.5em;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-end;
-	gap: 1.5em;
-}
-
-.container {
-	display: flex;
-	position: relative;
-	cursor: pointer;
-}
-
-.container input {
-	opacity: 0;
-	cursor: pointer;
-	height: 0;
-	width: 0;
-}
-
-.checkmark {
-	height: 6px;
-	width: 6px;
-	background-color: var(--white);
-	border-radius: 50%;
-}
-
-.container input:checked ~ .checkmark {
-	background-color: var(--PrimaryRed);
-}
-
-.checks {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 8px;
-}
-
-/* footer */
+/* ===================================================================================== FOOTER */
 footer {
 	font-family: Myriad Pro, sans-serif;
 	color: var(--white);
@@ -172,76 +87,7 @@ footer {
 	flex-wrap: wrap;
 }
 
-footer .footer-nav {
-	flex-grow: 1;
-	display: grid;
-	grid-template-columns: repeat( auto-fill, minmax(150px, 1fr));
-	column-gap: 1em;
-	row-gap: 1.5em;
-	font-weight: 300;
-}
-
-.footer-nav ul {
-	list-style-type: none;
-}
-
-.footer-nav li, h4 {
-	margin-bottom: 16px;
-}
-
-.footer-nav ul li:last-child {
-	margin-bottom: 0px;
-}
-
 footer h4 {
 	font-size: 21px;
 	font-weight: 700;
 }
-
-footer .contact-form {
-	width: min(100%, 398px);
-	background-color: #262626;
-	padding: 1.5em;
-	display: flex;
-	flex-direction: column;
-}
-
-footer .contact-form input {
-	width: 100%;
-	background-color: transparent;
-	border: none;
-	border-bottom: 1px solid var(--Grey500);
-	margin-bottom: 2em;
-	padding-bottom: 0.5em;
-}
-
-footer .contact-form button {
-	align-self: flex-end;
-	border: none;
-	color: var(--white);
-	font-size: 16px;
-	font-weight: 700;
-	background-color: var(--PrimaryRed);
-	width: 172px;
-	height: 36px;
-}
-
-footer .social-media {
-	display: grid;
-	grid-template-rows: repeat(3, min-content);
-	row-gap: 0.5em;
-	align-items: center;
-	font-weight: 300;
-}
-
-footer .social-media h5 {
-	font-size: 18px;
-	font-weight: 300;
-}
-
-.social-media .platforms {
-	display: grid;
-	grid-template-columns: repeat(3, min-content);
-	column-gap: 16px;
-}
-
