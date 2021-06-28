@@ -1,5 +1,9 @@
 import './App.css';
 import logo_text from './img/logo_text.svg';
+import logo_solid from './img/logo_solid.svg';
+import icon_facebook from './icons/icon_facebook.svg';
+import icon_instagram from './icons/icon_instagram.svg';
+import icon_youtube from './icons/icon_youtube.svg';
 
 function App() {
 	return (
@@ -54,7 +58,7 @@ function App() {
 					</article>
 					<article className="banner-card">
 						<div className="img podcast">
-							<img src={logo_text} alt="Muzikawi text logo" width="144" height="auto" />
+							<img src={logo_text} alt="Muzikawi logo" width="144" height="auto" />
 							<h3>Podcast</h3>
 							<p>Itat assequia voluption rest re rati to et pe a sit, consequi</p>
 						</div>
@@ -68,7 +72,71 @@ function App() {
 					</article>
 				</section>
 			</main>
-			<footer />
+			<footer>
+				<nav className="footer-nav">
+					<div className="nav browse">
+						<h4>
+							Browse
+						</h4>
+						<ul>
+							<li><a src="#">Home</a></li>
+							<li><a src="#">Releases</a></li>
+							<li><a src="#">Artists</a></li>
+							<li><a src="#">Albums</a></li>
+						</ul>
+					</div>
+					<div className="nav about">
+						<h4>
+							About
+						</h4>
+						<ul>
+							<li><a src="#">Philosophy</a></li>
+							<li><a src="#">Contact us</a></li>
+							<li><a src="#">Team</a></li>
+						</ul>
+					</div>
+					<div className="nav Resources">
+						<h4>
+							Resourses
+						</h4>
+						<ul>
+							<li><a src="#">News Letter</a></li>
+							<li><a src="#">Lefal & DMCA</a></li>
+							<li><a src="#">Privacy Polic</a>y</li>
+							<li><a src="#">FAQ</a></li>
+						</ul>
+					</div>
+				</nav>
+				<form className="contact-form">
+					<h4>Contact us</h4>
+					<label type="text">
+						<input placeholder="Name"></input>
+					</label>
+					<label type="text">
+						<input placeholder="Email"></input>
+					</label>
+					<label type="text">
+						<input placeholder="Message"></input>
+					</label>
+					<button>Send message</button>
+				</form>
+				<section className="social-media">
+					<img src={logo_solid} alt="Muzikawi logo" width="164" height="auto"></img>
+					<h5>Follow us on our platforms</h5>
+					<div className="platforms">
+						<a src="#">
+							<img src={icon_facebook} alt="Facebook" width="40" height="auto"></img>
+						</a>
+						<a src="#">
+							<img src={icon_instagram} alt="Instagram" width="40" height="auto"></img>
+						</a>
+						<a src="#">
+							<img src={icon_youtube} alt="Youtube" width="40" height="auto"></img>
+						</a>
+					</div>
+					<small>Copyright 2020. All Rights Reserved. Muzikawi</small>
+				</section>
+			</footer>
 		</div>
 	);
 }
