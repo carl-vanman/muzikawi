@@ -1,0 +1,72 @@
+/* ===================================================================================== CAROUSEL */
+
+.title {
+	background-color: var(--Grey200);
+}
+
+.text-divider {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 1em 0em 1em 1em;
+}
+
+/* När man vill använda två streck, en på varje sida, så kan man aktiver ::before varianten, så hamnar texten i mitten med 1 streck på varje sida. Kolla på desktop versionen.
+*/
+/* .text-divider::before, */
+.text-divider::after {
+	content: "";
+	height: 2px;
+	background-color: var(--Grey500);
+	flex-grow: 1;
+}
+
+/* ===================================================================================== MAIN */
+
+.banner-card .learn-more {
+	border: 1px solid var(--white);
+}
+
+.banner-card {
+	background-color: var(--PrimaryRed);
+}
+
+.banner-card .img {
+	width: 375px;
+	/* height på bild stämmer inte med height vid export */
+	height: 226px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.banner-card .radio {
+	background-image: url("../../img/banner_radio.svg");
+	background-image: url("../../img/banner_radio.svg");
+}
+
+.banner-card .podcast {
+	background-image: url("../../img/banner_podcast.svg");
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 1.5em 5.25em;
+}
+
+.banner-card .podcast h3 {
+	font-family: 'Montserrat', sans-serif;
+	color: var(--white);
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 48px;
+	margin-bottom: 0.25em;
+}
+
+.banner-card .content {
+	padding: 1.5em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5em;
+}

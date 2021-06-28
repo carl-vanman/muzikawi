@@ -1,0 +1,48 @@
+.img-hero {
+	width: 375px;
+	height: 560px;
+	background-image: url("../../img/hero_1920.svg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.hero .img-hero {
+	padding: 1.5em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 1.5em;
+}
+
+.container {
+	display: flex;
+	position: relative;
+	cursor: pointer;
+}
+
+.container input {
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.checkmark {
+	height: 6px;
+	width: 6px;
+	background-color: var(--white);
+	border-radius: 50%;
+}
+
+.container input:checked ~ .checkmark {
+	background-color: var(--PrimaryRed);
+}
+
+.checks {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}

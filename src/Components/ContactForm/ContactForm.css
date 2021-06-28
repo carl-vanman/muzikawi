@@ -1,0 +1,27 @@
+.contact-form {
+	width: min(100%, 398px);
+	background-color: #262626;
+	padding: 1.5em;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-form input {
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid var(--Grey500);
+	margin-bottom: 2em;
+	padding-bottom: 0.5em;
+}
+
+.contact-form button {
+	align-self: flex-end;
+	border: none;
+	color: var(--white);
+	font-size: 16px;
+	font-weight: 700;
+	background-color: var(--PrimaryRed);
+	width: 172px;
+	height: 36px;
+}
