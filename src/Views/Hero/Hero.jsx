@@ -9,7 +9,7 @@ const Hero = () => {
 					Taking the finest of Ethiopian music <br /> to the world!
 				</h1>
 				<p>
-					Itat assequia voluption rest re rati to et pe a sit, consequi que voloren ihictemque alis
+					Itat assequia voluption rest re rati to et pe a sit, <br /> consequi que voloren ihictemque alis
 					ipicaep raturi
 				</p>
 				<button className="learn-more">Learn More</button>
