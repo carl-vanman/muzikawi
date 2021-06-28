@@ -44,7 +44,7 @@ function App() {
 			<main>
 				<section>
 					<div className="title">
-						<div class="text-divider">
+						<div className="text-divider">
 							<h2>New Releases</h2>
 						</div>
 					</div>
