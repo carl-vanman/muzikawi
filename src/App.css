@@ -176,7 +176,6 @@ footer .footer-nav {
 	column-gap: 1em;
 	row-gap: 1.5em;
 	font-weight: 300;
-	margin-bottom: 2em;
 }
 
 .footer-nav ul {
@@ -185,6 +184,10 @@ footer .footer-nav {
 
 .footer-nav li, h4 {
 	margin-bottom: 16px;
+}
+
+.footer-nav ul li:last-child {
+	margin-bottom: 0px;
 }
 
 footer h4 {
@@ -218,4 +221,26 @@ footer .contact-form button {
 	background-color: var(--PrimaryRed);
 	width: 172px;
 	height: 36px;
+}
+
+footer .social-media {
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	align-items: center;
+	font-weight: 300;
+}
+
+footer .social-media h5 {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.social-media .platforms {
+	display: grid;
+	grid-template-columns: repeat(3, min-content);
+	column-gap: 16px;
+}
+
+.social-media small {
+	margin-top: 1.5em;
 }
