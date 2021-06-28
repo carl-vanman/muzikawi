@@ -60,11 +60,11 @@ p {
 }
 
 /* overraidar nav i footer. vet inte varför? */
-/* nav {
+.navigation {
 	width: 100vw;
 	height: 80px;
 	background-color: var(--PrimaryRed);
-} */
+}
 
 .img-hero {
 	width: 375px;
@@ -171,7 +171,7 @@ footer {
 
 footer .footer-nav {
 	display: grid;
-	grid-template-columns: repeat( auto-fill, minmax(150px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 	column-gap: 1em;
 	row-gap: 1.5em;
 	font-weight: 300;
@@ -181,7 +181,8 @@ footer .footer-nav {
 	list-style-type: none;
 }
 
-.footer-nav li, h4 {
+.footer-nav li,
+h4 {
 	margin-bottom: 16px;
 }
 
