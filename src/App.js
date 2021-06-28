@@ -43,7 +43,11 @@ function App() {
 			</header>
 			<main>
 				<section>
-					<div className="gallery" />
+					<div className="title">
+						<div class="text-divider">
+							<h2>New Releases</h2>
+						</div>
+					</div>
 				</section>
 				<section className="banner">
 					<article className="banner-card">
