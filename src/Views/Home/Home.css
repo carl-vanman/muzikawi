@@ -1,26 +1,5 @@
 /* ===================================================================================== CAROUSEL */
 
-.title {
-	background-color: var(--Grey200);
-}
-
-.text-divider {
-	display: flex;
-	align-items: center;
-	gap: 1rem;
-	padding: 1em 0em 1em 1em;
-}
-
-/* När man vill använda två streck, en på varje sida, så kan man aktiver ::before varianten, så hamnar texten i mitten med 1 streck på varje sida. Kolla på desktop versionen.
-*/
-/* .text-divider::before, */
-.text-divider::after {
-	content: "";
-	height: 2px;
-	background-color: var(--Grey500);
-	flex-grow: 1;
-}
-
 /* ===================================================================================== MAIN */
 
 .banner-card .learn-more {
@@ -69,4 +48,99 @@
 	flex-direction: column;
 	align-items: center;
 	gap: 1.5em;
+}
+
+/* ===================================================================================== NEW RELEASE CAROUSEL */
+
+.new-releases {
+	background-color: var(--Grey200);
+	padding: 1em 0em;
+}
+
+.text-divider {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 1em 0em;
+}
+
+/* När man vill använda två streck, en på varje sida, så kan man aktiver ::before varianten, så hamnar texten i mitten med 1 streck på varje sida. Kolla på desktop versionen.
+*/
+.text-divider::before,
+.text-divider::after {
+	content: "";
+	height: 2px;
+	background-color: var(--Grey500);
+	flex-grow: 1;
+}
+
+.carousel_container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.carousel_container span {
+	display: grid;
+	place-items: center;
+}
+
+.carousel_container span img {
+	padding: 1em 3em;
+}
+
+.carousel_container > * {
+	flex-grow: 1;
+}
+
+.carousel {
+	flex-grow: 0;
+	width: max(1000px);
+	height: 400px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.slider {
+	height: 320px;
+	display: flex;
+	gap: 16px;
+	transition: all 0.3s;
+}
+
+.slider .gallery-card {
+	width: 238px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-shrink: 0;
+}
+
+.slider .gallery-card h5 {
+	font-family: Myriad Pro, sans-serif;
+	font-size: 26px;
+	font-weight: 400;
+}
+
+.slider .gallery-card p {
+	margin-top: 4px;
+	color: var(--black);
+	font-size: 21px;
+	font-weight: 300;
+	text-align: start;
+}
+
+.left,
+.right {
+	cursor: pointer;
+}
+
+.arrow.left {
+	left: 10px;
+}
+
+.arrow.right {
+	left: 10px;
 }
