@@ -19,3 +19,19 @@
 .social-media small {
 	margin-top: 1.5em;
 }
+
+
+@media screen and (min-width: 960px) {
+
+	.social-media img {
+		width: 64px;
+	}
+
+	.social-media .logo {
+		width: 240px;
+	}
+
+	.social-media h5 {
+		align-self: end;
+	}
+}

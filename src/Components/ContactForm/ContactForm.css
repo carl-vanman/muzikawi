@@ -1,9 +1,11 @@
 .contact-form {
 	width: min(100%, 398px);
+	height: min(100%, 323px);
 	background-color: #262626;
 	padding: 1.5em;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 }
 
 .contact-form input {

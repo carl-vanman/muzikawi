@@ -82,10 +82,41 @@ p {
 footer {
 	font-family: Myriad Pro, sans-serif;
 	color: var(--white);
-	padding: 2em 1.5em;
+	padding: 2.5em 1.5em;
+
+	display: grid;
+	/* kanske man ska tillåta mindre än 375 -3 em */
+	grid-template-columns: repeat(auto-fit, minmax(calc(375px - 3em), 1fr));
+	row-gap: 2em;
+	column-gap: max(2em);
+	align-items: center;
 }
 
 footer h4 {
 	font-size: 21px;
 	font-weight: 700;
+}
+
+@media screen and (min-width: 993px) {
+
+	footer {
+		padding:2em 80px;
+	}
+
+	footer > :last-child {
+		grid-row-start: 1;
+	}
+
+	footer > :nth-child(2) {
+		justify-self: end;
+	}
+}
+
+.App {
+	display: grid;
+	grid-template-columns: 1fr minmax(375px, 1366px) 1fr;
+}
+
+.App > * {
+	grid-column-start: 2;
 }

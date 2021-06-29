@@ -10,7 +10,7 @@ const SocialMedia = () => {
 
 	return (
 		<section className="social-media">
-			<img src={logo_solid} alt="Muzikawi logo" width="164" height="auto" />
+			<img className="logo" src={logo_solid} alt="Muzikawi logo" width="164" height="auto" />
 			<h5>Follow us on our platforms</h5>
 			<div className="platforms">
 				<a src="#">

@@ -1,7 +1,7 @@
 footer .footer-nav {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-	column-gap: 1em;
+	grid-template-columns: repeat(auto-fill, minmax(min-content, 120px));
+	/* column-gap: 0.5em; */
 	row-gap: 1.5em;
 	font-weight: 300;
 }
@@ -12,7 +12,7 @@ footer .footer-nav {
 
 .footer-nav li,
 h4 {
-	margin-bottom: 16px;
+	margin-bottom: 24px;
 }
 
 .footer-nav ul li:last-child {

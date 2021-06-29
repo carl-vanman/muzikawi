@@ -6,7 +6,7 @@ const Hero = () => {
 		<section className="hero">
 			<div className="img-hero">
 				<h1>
-					Taking the finest of Ethiopian music <br /> to the world!
+					Taking the finest of Ethiopian music {/* <br /> */} to the world!
 				</h1>
 				<p>
 					Itat assequia voluption rest re rati to et pe a sit, <br /> consequi que voloren ihictemque alis

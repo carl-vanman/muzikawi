@@ -2,10 +2,23 @@
 
 .banner-card .learn-more {
 	border: 1px solid var(--white);
+
+}
+
+.banner {
+	background-color: var(--PrimaryRed);
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+	justify-content: center;
 }
 
 .banner-card {
-	background-color: var(--PrimaryRed);
+	/* background-color: var(--PrimaryRed); */
+
+	width: 375px;
+	height: 399px;
+	/* min-content? */
 }
 
 .banner-card .img {
@@ -46,4 +59,56 @@
 	flex-direction: column;
 	align-items: center;
 	gap: 1.5em;
+}
+
+@media screen and (min-width: 376px) {
+
+	.banner {
+		padding-top: 2em;
+	}
+
+	.banner-card .img {
+		border-radius: 24px;
+	}
+
+	.banner-card .content p {
+		text-align: left;
+	}
+
+	.banner-card .content button {
+		align-self: flex-start;
+	}
+}
+
+@media screen and (min-width: 1207px) {
+
+	.banner {
+		padding: 3em 0em;
+	}
+
+	.banner-card {
+		width: 595px;
+		height: min-content;
+	}
+	
+	.banner-card .img {
+		width: 595px;
+		/* height på bild stämmer inte med height vid export */
+		height: 360px;
+	}
+
+	.banner-card .content {
+		padding: 1.5em 0em;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1.5em;
+	}
+
+	.banner-card .content p {
+		width: 409px;
+		font-size: 18px;
+		text-align: left;
+	}
 }
