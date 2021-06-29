@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import logo_stroke from '../../img/logo_stroke.svg'
+import icn_global from '../../img/icn_Global.svg'
 import './Navbar.css'
 
 function NavBar() {
@@ -65,6 +66,7 @@ function NavBar() {
 								About
 							</Link>
 						</li>
+					<img src={icn_global} width="144" height="auto" className="global" />
 
 					</ul>
 				</div>

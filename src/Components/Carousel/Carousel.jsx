@@ -39,21 +39,21 @@ const Carousel = () => {
 						<section className="gallery-card">
 							<img src={gallery_gofere} alt="Album cover Felege" />
 							<div className="text">
-								<h5>Felege</h5>
-								<p>Situna Balk</p>
+								<h5>Gofere</h5>
+								<p>Azmach</p>
 							</div>
 						</section>
 						<section className="gallery-card">
 							<img src={gallery_fountain} alt="Album cover Felege" />
 							<div className="text">
-								<h5>Felege</h5>
-								<p>Situna Balk</p>
+								<h5>Fountain of Living...</h5>
+								<p>Abba Jorga Mesfin</p>
 							</div>
 						</section>
 						<section className="gallery-card">
 							<img src={gallery_halkemidi} alt="Album cover Felege" />
 							<div className="text">
-								<h5>Felege</h5>
+								<h5>Halkemidi</h5>
 								<p>Situna Balk</p>
 							</div>
 						</section>
