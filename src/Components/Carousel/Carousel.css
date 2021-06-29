@@ -1,0 +1,119 @@
+/* ===================================================================================== NEW RELEASE HEADING */
+
+.new-releases {
+	background-color: var(--Grey200);
+	padding: 1em 0em;
+}
+
+.text-divider {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 1em 0em 1em 1.5em;
+}
+
+/* När man vill använda två streck, en på varje sida, så kan man aktiver ::before varianten, så hamnar texten i mitten med 1 streck på varje sida. Kolla på desktop versionen.
+*/
+/* .text-divider::before, */
+.text-divider::after {
+	content: "";
+	height: 2px;
+	background-color: var(--Grey500);
+	flex-grow: 1;
+}
+
+/* ===================================================================================== ALBUM CAROUSEL */
+.carousel_container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.carousel_container .arrow {
+	display: none;
+}
+
+.carousel {
+	width: max(1000px);
+	height: 400px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.slider {
+	height: 320px;
+	display: flex;
+	gap: 16px;
+	transition: all 0.3s;
+	padding: 0em 1.5em 0em 1.5em;
+	overflow: scroll;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+}
+
+.slider .gallery-card {
+	width: 238px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-shrink: 0;
+}
+
+.slider .gallery-card h5 {
+	font-family: Myriad Pro, sans-serif;
+	font-size: 26px;
+	font-weight: 400;
+}
+
+.slider .gallery-card p {
+	margin-top: 4px;
+	color: var(--black);
+	font-size: 21px;
+	font-weight: 300;
+	text-align: start;
+}
+
+@media screen and (min-width: 960px) {
+	.text-divider {
+		padding: 1em 0em;
+	}
+
+	.carousel_container .arrow {
+		display: grid;
+		place-items: center;
+		cursor: pointer;
+	}
+
+	.carousel_container .arrow img {
+		padding: 1em 3em;
+	}
+
+	/* ARROWS  */
+	.carousel_container > * {
+		flex-grow: 1;
+	}
+
+	.carousel {
+		flex-grow: 0;
+	}
+
+	.slider {
+		height: 320px;
+		display: flex;
+		gap: 16px;
+		transition: all 0.3s;
+		padding: 0em 0em 0em 0em;
+		overflow: visible;
+	}
+
+	.text-divider::before {
+		content: "";
+		height: 2px;
+		background-color: var(--Grey500);
+		flex-grow: 1;
+	}
+}
