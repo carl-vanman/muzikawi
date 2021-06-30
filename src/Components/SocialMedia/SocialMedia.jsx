@@ -23,7 +23,7 @@ const SocialMedia = () => {
 					<img src={icon_youtube} alt="Youtube" width="40" height="auto" />
 				</a>
 			</div>
-			<small>Copyright 2020. All Rights Reserved. Muzikawi</small>
+			{/* <small>Copyright 2020. All Rights Reserved. Muzikawi</small> */}
 		</section>
 	)
 }
