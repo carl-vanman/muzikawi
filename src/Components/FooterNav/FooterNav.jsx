@@ -1,4 +1,5 @@
 import './FooterNav.css'
+import { Link } from 'react-router-dom'
 
 const FooterNav = () => {
 
@@ -8,16 +9,16 @@ const FooterNav = () => {
 				<h4>Browse</h4>
 				<ul>
 					<li>
-						<a src="#">Home</a>
+						<Link to="/">Home</Link>
 					</li>
 					<li>
-						<a src="#">Releases</a>
+						<Link to="/">Releases</Link>
 					</li>
 					<li>
-						<a src="#">Artists</a>
+						<Link to="/">Artists</Link>
 					</li>
 					<li>
-						<a src="#">Albums</a>
+						<Link to="/">Albums</Link>
 					</li>
 				</ul>
 			</div>
@@ -25,13 +26,13 @@ const FooterNav = () => {
 				<h4>About</h4>
 				<ul>
 					<li>
-						<a src="#">Philosophy</a>
+						<Link to="/">Philosophy</Link>
 					</li>
 					<li>
-						<a src="#">Contact us</a>
+						<Link to="/">Contact us</Link>
 					</li>
 					<li>
-						<a src="#">Team</a>
+						<Link to="/">Team</Link>
 					</li>
 				</ul>
 			</div>
@@ -39,16 +40,16 @@ const FooterNav = () => {
 				<h4>Resourses</h4>
 				<ul>
 					<li>
-						<a src="#">News Letter</a>
+						<Link to="/">News Letter</Link>
 					</li>
 					<li>
-						<a src="#">Lefal & DMCA</a>
+						<Link to="/">Lefal & DMCA</Link>
 					</li>
 					<li>
-						<a src="#">Privacy Polic</a>y
+						<Link to="/">Privacy Policy</Link>
 					</li>
 					<li>
-						<a src="#">FAQ</a>
+						<Link to="/">FAQ</Link>
 					</li>
 				</ul>
 			</div>
