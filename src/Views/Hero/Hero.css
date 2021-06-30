@@ -50,6 +50,7 @@
 .img-hero h1 {
 	width: min(100%,900px);
 }
+
 @media screen and (min-width: 376px) {
 	.img-hero {
 		width: 100%;
