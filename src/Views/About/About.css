@@ -1,0 +1,15 @@
+.about-us {
+	padding-top: 10em;
+	padding-bottom: 10em;
+	background-color: var(--PrimaryRed);
+}
+
+.hireUs {
+	color: var(--white);
+	font-size: 46px;
+	font-weight: bold;
+}
+
+.best-duo {
+	padding-top: 5em;
+}
