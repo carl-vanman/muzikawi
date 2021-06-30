@@ -29,17 +29,6 @@
 	width: 0;
 }
 
-.checkmark {
-	height: 6px;
-	width: 6px;
-	background-color: var(--white);
-	border-radius: 50%;
-}
-
-.container input:checked ~ .checkmark {
-	background-color: var(--PrimaryRed);
-}
-
 .checks {
 	display: flex;
 	justify-content: center;
@@ -47,8 +36,23 @@
 	gap: 8px;
 }
 
+.dots {
+	width: 8px;
+	height: 8px;
+	background-color: var(--white);
+	border-radius: 50px;
+}
+
+.active-dot {
+	background-color: var(--PrimaryRed);
+}
+
 .img-hero h1 {
-	width: min(100%,900px);
+	width: min(100%, 900px);
+}
+
+.learn-more:hover {
+	background-color: #4a4240;
 }
 
 @media screen and (min-width: 376px) {

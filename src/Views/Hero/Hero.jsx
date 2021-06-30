@@ -14,22 +14,10 @@ const Hero = () => {
 				</p>
 				<button className="learn-more">Learn More</button>
 				<div className="checks">
-					<label className="container">
-						<input type="checkbox" />
-						<span className="checkmark" />
-					</label>
-					<label className="container">
-						<input type="checkbox" />
-						<span className="checkmark" />
-					</label>
-					<label className="container">
-						<input type="checkbox" />
-						<span className="checkmark" />
-					</label>
-					<label className="container">
-						<input type="checkbox" />
-						<span className="checkmark" />
-					</label>
+					<span className="dots"></span>
+					<span className="dots active-dot"></span>
+					<span className="dots"></span>
+					<span className="dots"></span>
 				</div>
 			</div>
 		</section>
