@@ -2,6 +2,10 @@
 	padding-top: 10em;
 	padding-bottom: 10em;
 	background-color: var(--PrimaryRed);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .hireUs {
@@ -12,4 +16,18 @@
 
 .best-duo {
 	padding-top: 5em;
+}
+
+.joke {
+	color: var(--white);
+	font-size: 20px;
+	padding-top: 2.5em;
+	text-align: center;
+}
+
+.punchline {
+	color: var(--white);
+	font-size: 18px;
+	text-align: center;
+	padding-top: 1em;
 }
