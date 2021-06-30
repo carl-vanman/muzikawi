@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Maniva Digital AB challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The challenge was to go from design to development, given a landing page designed in Figma. We were free to use any frameworks/libraries/tools to build the website. We decided to go with React.
 
-## Available Scripts
+## Challenges
 
-In the project directory, you can run:
+1. Use a design given in Figma => Framework.
+	- We had an open choice of which framework to choose from, and we could have gone with any, and decided to dive head in first straight into React. 
 
-### `npm start`
+2. Desktop + Responsiveness 
+	- We created a mobile version, a middle ground for sizes inbetween, and a full fledge desktop version.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+3. Creating one React component
+	- This challenge was to create ONE component, since we like things to be structured, we planned everything accordingly, and created more than just one.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+4. Backend Serve and State Management
+	- This challenge was to use state hooks and prepare a fetch request (JSON object). So we went with Axios and fetched some great dad jokes.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Our Experience
 
-### `npm run build`
+This challenge was a lot of fun, and we went deep into the rabbit hole from start. It gave us come great insight to "problems" that we would never has seen outside of the challenge. From smaller issues, to mind-boggling issues, which made it all worth it at the end when we had our EUREKA moments. The moment of solving an issue, that we never ran into before, is the reason why we study Frontend Dev.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Developers
 
-### `npm run eject`
+Christos Eteoglou & Carl Vänman
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[Carl on LinkedIn](https://www.linkedin.com/in/carl-vanman/)
+[Christos on LinkedIn](https://www.linkedin.com/in/eteoglou/)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
