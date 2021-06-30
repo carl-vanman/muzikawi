@@ -6,16 +6,36 @@ import gallery_fountain from '../../img/gallery_fountain.svg'
 import gallery_halkemidi from '../../img/gallery_halkemidi.svg'
 import icon_arrow_left from '../../icons/icon_arrow_left.svg'
 import icon_arrow_right from '../../icons/icon_arrow_right.svg'
+import GalleryCard from '../GalleryCard/GalleryCard.jsx'
+
+/*eslint no-extend-native: ["error", { "exceptions": ["Array"] }]*/
+Array.prototype.move = function (from, to) {
+	this.splice(to, 0, this.splice(from, 1)[0]);
+  };
 
 const Carousel = () => {
 
-	const [move, setMove] = useState(0)
+	const [galleryCardData, SetGalleryCardData] = useState(
+		[
+			{id: 1, title: "Felege", img: gallery_felege, artist: "Situna Balk"},
+			{id:2, title: "Gofere", img: gallery_gofere, artist: "Azmach"},
+			{id:3, title: "Fountain of Living...", img: gallery_fountain, artist: "Abba Jorga Mesfin"},
+			{ id:4, title: "Halkemidi", img: gallery_halkemidi, artist: "Situna Balk"},
+			{ id:5, title: "Felege", img: gallery_felege, artist: "Situna Balk"}
+		]
+	)
 
-	const moveLeft = () => {
-		setMove(prev => prev - 20.25)
-	}
 	const moveRight = () => {
-		setMove(prev => prev + 20.25)
+		const newArr = [...galleryCardData];
+		newArr.move(0, galleryCardData.length -1)
+		
+		SetGalleryCardData(newArr)
+	}
+	const moveLeft = () => {
+		const newArr = [...galleryCardData];
+		newArr.move(galleryCardData.length -1, 0)
+		
+		SetGalleryCardData(newArr)
 	}
 
 	return (
@@ -24,49 +44,17 @@ const Carousel = () => {
 				<h2>New Releases</h2>
 			</div>
 			<div className="carousel_container">
-				<span className="arrow left" onClick={() => moveRight()}>
+				<span className="arrow left" onClick={moveLeft}>
 					<img src={icon_arrow_left} alt="" />
 				</span>
 				<div className="carousel">
-					<div className="slider" style={{ transform: `translate(${move}%)` }}>
-						<section className="gallery-card">
-							{<img src={gallery_felege} alt="Album cover Felege" />}
-							{<div className="text">
-								<h5>Felege</h5>
-								<p>Situna Balk</p>
-							</div>}
-						</section>
-						<section className="gallery-card">
-							<img src={gallery_gofere} alt="Album cover Felege" />
-							<div className="text">
-								<h5>Gofere</h5>
-								<p>Azmach</p>
-							</div>
-						</section>
-						<section className="gallery-card">
-							<img src={gallery_fountain} alt="Album cover Felege" />
-							<div className="text">
-								<h5>Fountain of Living...</h5>
-								<p>Abba Jorga Mesfin</p>
-							</div>
-						</section>
-						<section className="gallery-card">
-							<img src={gallery_halkemidi} alt="Album cover Felege" />
-							<div className="text">
-								<h5>Halkemidi</h5>
-								<p>Situna Balk</p>
-							</div>
-						</section>
-						<section className="gallery-card">
-							<img src={gallery_felege} alt="Album cover Felege" />
-							<div className="text">
-								<h5>Felege</h5>
-								<p>Situna Balk</p>
-							</div>
-						</section>
+					<div className="slider">
+						{
+							galleryCardData.map(data => <GalleryCard key={data.id} data={data}/>)
+						}
 					</div>
 				</div>
-				<span className="arrow right" onClick={() => moveLeft()}>
+				<span className="arrow right" onClick={moveRight}>
 					<img src={icon_arrow_right} alt="" />
 				</span>
 			</div>

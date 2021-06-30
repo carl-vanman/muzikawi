@@ -22,7 +22,7 @@ body {
 	background-color: var(--black);
 }
 
-.learn-more {
+.learn-more, .learn-more-dark {
 	width: 162px;
 	height: 38px;
 	border: 2px solid var(--PrimaryRed);
@@ -35,6 +35,11 @@ body {
 	font-family: Myriad Pro, sans-serif;
 	font-weight: 300;
 	font-size: 18px;
+}
+
+.learn-more:hover {
+	background-color: var(--white);
+	color: var(--black);
 }
 
 h1,

@@ -1,0 +1,21 @@
+.gallery-card {
+	width: 238px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-shrink: 0;
+}
+
+.gallery-card h5 {
+	font-family: Myriad Pro, sans-serif;
+	font-size: 26px;
+	font-weight: 400;
+}
+
+.gallery-card p {
+	margin-top: 4px;
+	color: var(--black);
+	font-size: 21px;
+	font-weight: 300;
+	text-align: start;
+}

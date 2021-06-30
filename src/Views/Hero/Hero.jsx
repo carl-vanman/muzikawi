@@ -12,7 +12,7 @@ const Hero = () => {
 					Itat assequia voluption rest re rati to et pe a sit, <br /> consequi que voloren ihictemque alis
 					ipicaep raturi
 				</p>
-				<button className="learn-more">Learn More</button>
+				<button className="learn-more-dark">Learn More</button>
 				<div className="checks">
 					<span className="dots"></span>
 					<span className="dots active-dot"></span>

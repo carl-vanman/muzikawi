@@ -12,9 +12,6 @@
 	padding: 1em 0em 1em 1.5em;
 }
 
-/* När man vill använda två streck, en på varje sida, så kan man aktiver ::before varianten, så hamnar texten i mitten med 1 streck på varje sida. Kolla på desktop versionen.
-*/
-/* .text-divider::before, */
 .text-divider::after {
 	content: "";
 	height: 2px;
@@ -27,6 +24,10 @@
 	width: 100%;
 	display: flex;
 	justify-content: center;
+}
+
+.carousel_container .arrow img {
+	margin-bottom: 70px;
 }
 
 .carousel_container .arrow {
@@ -53,28 +54,6 @@
 
 ::-webkit-scrollbar {
 	width: 0px;
-}
-
-.slider .gallery-card {
-	width: 238px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	flex-shrink: 0;
-}
-
-.slider .gallery-card h5 {
-	font-family: Myriad Pro, sans-serif;
-	font-size: 26px;
-	font-weight: 400;
-}
-
-.slider .gallery-card p {
-	margin-top: 4px;
-	color: var(--black);
-	font-size: 21px;
-	font-weight: 300;
-	text-align: start;
 }
 
 @media screen and (min-width: 960px) {
