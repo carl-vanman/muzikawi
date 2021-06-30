@@ -27,7 +27,6 @@ This challenge was a lot of fun, and we went deep into the rabbit hole from star
 
 Christos Eteoglou & Carl Vänman
 
-[Carl on LinkedIn](https://www.linkedin.com/in/carl-vanman/)
-[Christos on LinkedIn](https://www.linkedin.com/in/eteoglou/)
+[Carl on LinkedIn](https://www.linkedin.com/in/carl-vanman/) || [Christos on LinkedIn](https://www.linkedin.com/in/eteoglou/)
 
 
