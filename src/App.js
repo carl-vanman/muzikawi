@@ -23,11 +23,11 @@ function App() {
 				</header>
 				<main>
 					<Switch>
-						<Route path="/" exact>
-							<Home />
-						</Route>
 						<Route path="/about" exact>
 							<About />
+						</Route>
+						<Route path="" exact>
+							<Home />
 						</Route>
 					</Switch>
 				</main>
